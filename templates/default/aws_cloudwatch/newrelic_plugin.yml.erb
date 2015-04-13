@@ -39,6 +39,6 @@ agents:
   # Note: Overview dashboards are being deprecated
   #
 <% node[:newrelic][:aws_cloudwatch][:agents].each do |agent| %>
-  <%= agent %>:
-    overview: false
+  <%= agent.first %>:
+    overview: <%= agent.last %>
 <% end %>

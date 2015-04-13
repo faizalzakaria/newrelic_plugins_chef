@@ -64,9 +64,9 @@ An example of using the AWS Cloudwatch and MySQL plugins with a defined role. Se
           "aws_access_key" => "AWS_ACCESS_KEY",
           "aws_secret_key" => "AWS_SECRET_KEY",
           "agents" => [
-            "ec2",
-            "ebs",
-            "elb"
+            ["ec2", "true"],
+            ["ebs", "true"],
+            ["elb", "true"]
           ]
         },
         "mysql" => {
@@ -428,4 +428,5 @@ This cookbook is under the included MIT License.
 
 ## Contact ##
 
-Contribute to this Cookbook at https://github.com/newrelic-platform/newrelic_plugins_chef. Any other feedback or support related questions can be sent to support @ newrelic.com. 
+Contribute to this Cookbook at https://github.com/newrelic-platform/newrelic_plugins_chef. Any other feedback or support related questions can be sent to support @ newrelic.com
+
